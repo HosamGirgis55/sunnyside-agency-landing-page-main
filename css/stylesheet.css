@@ -57,12 +57,16 @@ nav ul li:hover {
     min-height: 70vh;
     text-align: center;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .orange{
     background-image: url('../images/desktop/image-photography.jpg');
     min-height: 70vh;
     background-position: center;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover
 }
 section img {
     width: 100%;
@@ -144,7 +148,7 @@ nav div{
 @media screen and (max-width:700px) {
     nav a{
         display: block;
-        margin: 11px;
+        /* margin: 11px; */
         text-align: end;
     }
     nav .menu{
@@ -160,14 +164,14 @@ nav div{
         background-color: white;
         color: hsl(232, 10%, 55%);
         padding: 20px;
-        margin: 16px 0px;
+        margin: 16px -9px;
     }
     nav div:hover .one{
         content: "";
         width: 20px;
         height: 50px;
         position: absolute;
-        right: 0%;
+        right: -7%;
         top: 0%;
         margin-top: -10px;
         border-width: 17px;
@@ -179,15 +183,13 @@ nav div{
         background-color: hsl(51, 100%, 49%);
         color: black;
     }
-
-    /* not work */
     main section{
         position: relative;
     }
-    .egg{
+    main section .egg{
         order: 1;
     }
-    .textegg{
+    main section .textEgg{
         order: 2;
     }
 }
